@@ -11,7 +11,7 @@ genymotion_peco(){
   if [[ $vm_name =~ ^\"(.+)\".* ]] ; then
      name=${BASH_REMATCH[1]}
      echo "boot $name"
-     $player --vm-name "$name"
+     $player --vm-name "$name" &
   fi
 
 }
