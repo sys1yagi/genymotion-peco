@@ -1,11 +1,10 @@
 genymotion_peco(){
 
   if [ -z "$GENYMOTION_APP_HOME" ]; then
-    echo "GENYMOTION_APP_HOME is empty. Use '/Applications/Genymotion.app/' instead this time."
-    player="/Applications/Genymotion.app/Contents/MacOS/player"
-  else
-    player="$GENYMOTION_APP_HOME/Contents/MacOS/player"
+    local GENYMOTION_APP_HOME="/Applications/Genymotion.app"
+    echo "GENYMOTION_APP_HOME is not set. Use '$GENYMOTION_APP_HOME' for now."
   fi
+  player="$GENYMOTION_APP_HOME/Contents/MacOS/player.app/Contents/MacOS/player"
 
   vm_name=`VBoxManage list vms | peco`
   if [[ $vm_name =~ ^\"(.+)\".* ]] ; then
