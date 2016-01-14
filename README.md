@@ -5,6 +5,10 @@ Launch [genymotion](http://www.genymotion.com/) emulator from console.
 
 ![](static/demo.gif)
 
+# Support version
+
+Genymotion 2.6.0 or higher.
+
 # Quick Start 
 
 genymotion-peco require [peco](https://github.com/peco/peco) so install [peco](https://github.com/peco/peco) at first.
